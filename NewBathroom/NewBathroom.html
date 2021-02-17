@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>New Item </title>
+    <link href="NewBathroom.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+      <nav role="navigation">Nav</nav>
+        <main role="main">
+            <header>
+                <h1>
+                    New Bathroom 
+                </h1>
+            </header>
+            <section>
+                <form action="upload.php" method="post" enctype="multipart/form-data" id="newbathroom">
+                    Select image to upload:
+                    <input type="file" name="fileToUpload" id="fileToUpload">
+
+                <br><br>
+                <label for="location">
+                    Location
+                </label>
+                <input id="location" name="location" type="text" placeholder="location" required>
+                
+                   <label for="bathroom">
+                       Bathroom
+                   </label>
+                   <input id="bathroom" name="bathroom" type="text" placeholder="bathroom" required>
+
+                <br><br>
+                    <section class="description">
+                        <label for="description">
+                            Description
+                        </label>
+                        <br>
+                        <input id="description" type="textarea" value="description">
+                    <br><br>
+                    </section>
+                    <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" />
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                      </div>
+                      <br><br>
+
+                      <input type="submit" value="Add Item" name="submit">
+                      <br><br>
+                    
+                    </form>
+            </section>
+        </main>
+        <footer>
+            Footer
+        </footer>
+  </body>
+</html>

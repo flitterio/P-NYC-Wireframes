@@ -1,0 +1,13 @@
+html{
+    text-align: center;
+}
+
+nav, footer{
+    background-color: gray;
+}
+
+section{
+    background-color: lightgray;
+    height: 600px;
+}
+
